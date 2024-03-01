@@ -1,0 +1,322 @@
+:root {
+    --color-primary: red;
+    --color-secondary: blue;
+    }
+    html {
+    font-size: 62.5%;
+    /* Allows you to use rems instead of pixels for sizing */
+    /*
+    .5rem = 5px
+    1.0rem = 10px
+    1.6rem = 16px
+    2.0rem = 20px
+    6.0rem = 60px
+    */
+    }
+    /* Browser Reset */
+    *,
+    *::before,
+    *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    /* Easy Pixel Calculations with Rem Units */
+    body {
+    font-size: 1.6rem;
+    }
+    /* Fix Browser Bounce on Macs */
+    body {
+    overflow-x: auto;
+    width: 100%;
+    overscroll-behavior: none;
+    }
+    
+    /* General Mobile First CSS */
+    
+    .container {
+    background-color: white;
+    min-height: 10rem;
+    
+    max-width: 120rem;
+    margin: auto;
+    padding: 0rem 3rem 0rem 3rem;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.7;
+        background-color: #f8fafc;
+        color: #333;
+    }
+
+    /* Text style */
+
+    a{
+        color: red;
+        text-decoration: none;
+    }
+
+    p{
+        margin: 1rem;
+    }
+
+    h1,h2{
+        text-align: center;
+    }
+
+    h1,h2,h3{
+        line-height: 1.2;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    li{
+        line-height: 2;
+    }
+
+
+
+    
+    #pageheader {
+        background-color: var(--color-primary);
+        height: 7.0rem;
+    }
+
+    #pageheader .container{
+        background-color: aquamarine;
+        border: 2px dashed red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding: 0 2rem 0 2rem;
+    }
+
+    .logo img{
+        height: 6rem;
+    }
+
+    .logo:hover{
+        animation-name:swim;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+
+    @keyframes swim{
+        0%{transform:rotate(0deg);}
+        100%{transform: rotate(45deg);}
+    }
+
+    /* header menu */
+
+    #menu{
+        background-color: #f0ad4a;
+        border: 2px dashed red;
+        display: flex;
+        justify-content: space-between;
+        width: 20rem;
+        list-style-type: none;
+        background-color: none;
+    }
+
+    #menu li a{
+        color: #fff;
+    }
+
+    /* end of header section style */
+
+/* showcase */
+
+    #showcase {
+    border: .2rem solid none;
+    background-color: var(--color-primary);
+    padding: 3rem;
+background-image: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
+background-image: url(images/pond.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: bottom left;
+    }
+
+    #showcasetext{
+        border: 2rem solid none;
+    color: #fff;
+    text-align: center;
+    margin: 5rem auto;
+    max-width: 60rem;
+    
+    }
+
+    #showcase h1{
+        font-size: 5rem;
+        margin-bottom: 2rem;
+        text-shadow: 0 0 1rem black;
+    }
+
+    #showcase blockquote{
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+    #showcase img{
+        border-radius: 1rem;
+        margin: auto;
+    }
+
+    #showcaseintro{
+        color: #fff;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    #logosbig{
+        display: none;
+    }
+
+    #logossmal{
+        width: 30rem;
+    }
+
+/* end showcase */
+
+/* begin features */
+
+    #features .container{
+    padding-top: 2rem;
+    background-color: burlywood;
+    border: 2px dashed red;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-direction: column;
+    }
+
+    .card{
+        background-color: #fff;
+        padding: 2rem;
+        box-shadow: 0rem 0rem 1rem silver;
+        margin-bottom: 2rem;
+        border-radius: 2.5rem;
+    }
+/* end features */
+
+/* page content
+ */
+    #pagecontent {
+    background-color: none;
+    padding: 2rem 0 2rem 0;
+    }
+
+    #pagecontent h2, h3{
+        padding:2rem;
+    }
+
+    #pagecontent h2{
+        font-size: 4rem;
+    }
+
+    #pagecontent h3{
+        font-size: 2.5rem;
+    }
+
+    /* end page content */
+
+    /*semesters */
+    #semesters {
+    padding: 2rem 0 2rem 0;
+    }
+
+    #semesters h2, #semesters h3{
+        padding: 2rem 0 2rem 0;
+    }
+
+    #semesters h2{
+        font-size: 4rem;
+    }
+
+    #semesters h3{
+        font-size: 2.5rem;
+    }
+
+    .assignments a{
+        color: #2d6858;
+    }
+
+    /* end semesters */
+
+    /* semesters thumbnail section */
+    .thumbnail{
+        background-color: burlywood;
+        border: 2px dashed red;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .thumb{
+        width: 150px;
+        height: 150px;
+    }
+
+    .thumb:hover{
+        animation-name:tilt;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes tilt{
+        0%{transform:rotate(0deg);}
+        100%{transform: rotate(-15deg);}
+    }
+    /* end semesters thumbnail section */
+
+    #pagefooter {
+    min-height: 200px;
+    background-color: cornflowerblue;
+    padding: 1rem;
+    }
+    
+    /* Media Queries
+    @media only screen and (min-width: 320px) {
+    body {
+    font-size: 1rem;
+    }
+    #features {
+    background-color: magenta;
+    }
+    }
+    @media only screen and (min-width: 480px) {
+    body {
+    font-size: 1.4rem;
+    }
+    #features {
+    background-color: yellow;
+    }
+    }
+    @media only screen and (min-width: 768px) {
+    body {
+    font-size: 1.6rem;
+    }
+    #features {
+    background-color: lime;
+    }
+    }
+    @media only screen and (min-width: 1024px) {
+    #features {
+    background-color: coral;
+    }
+    }
+    @media only screen and (min-width: 1200px) {
+    body {
+    font-size: 2rem;
+    }
+    #features {
+    background-color: steelblue;
+    }
+    } */
