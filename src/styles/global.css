@@ -1,6 +1,6 @@
 :root {
-    --color-primary: red;
-    --color-secondary: blue;
+    --color-primary: #F99115;
+    --color-secondary: #ffeacb;
     }
     html {
     font-size: 62.5%;
@@ -47,7 +47,7 @@
     body{
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.7;
-        background-color: #f8fafc;
+        background-color: var(--color-secondary);
         color: #333;
     }
 
@@ -84,8 +84,8 @@
     }
 
     #pageheader .container{
-        background-color: aquamarine;
-        border: 2px dashed red;
+        background-color: rgb(255, 179, 85);
+        border: 4px double #FFDECA;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -113,13 +113,14 @@
     /* header menu */
 
     #menu{
-        background-color: #f0ad4a;
-        border: 2px dashed red;
+        background-color: var(--color-primary);
+        border: 2px double none;
         display: flex;
         justify-content: space-between;
         width: 20rem;
         list-style-type: none;
         background-color: none;
+        padding: .3rem;
     }
 
     #menu li a{
@@ -135,7 +136,7 @@
     background-color: var(--color-primary);
     padding: 3rem;
 background-image: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
-background-image: url(images/pond.png);
+background-image: url(images/bananas.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
@@ -144,7 +145,7 @@ background-position: bottom left;
 
     #showcasetext{
         border: 2rem solid none;
-    color: #fff;
+    color: #b36200;
     text-align: center;
     margin: 5rem auto;
     max-width: 60rem;
@@ -154,7 +155,7 @@ background-position: bottom left;
     #showcase h1{
         font-size: 5rem;
         margin-bottom: 2rem;
-        text-shadow: 0 0 1rem black;
+        text-shadow: 0 0 1rem #fff;
     }
 
     #showcase blockquote{
@@ -168,7 +169,7 @@ background-position: bottom left;
     }
 
     #showcaseintro{
-        color: #fff;
+        color: #b36200;
         text-align: center;
         font-size: 3rem;
     }
@@ -177,8 +178,9 @@ background-position: bottom left;
         display: none;
     }
 
-    #logossmal{
-        width: 30rem;
+    #logossmall{
+        /* width: 30rem; */
+        display: none;
     }
 
 /* end showcase */
@@ -187,8 +189,8 @@ background-position: bottom left;
 
     #features .container{
     padding-top: 2rem;
-    background-color: burlywood;
-    border: 2px dashed red;
+    background-color: var(--color-secondary);
+    border: 4px double #FFDECA;
     display: flex;
     gap: 1rem;
     justify-content: space-between;
@@ -250,8 +252,8 @@ background-position: bottom left;
 
     /* semesters thumbnail section */
     .thumbnail{
-        background-color: burlywood;
-        border: 2px dashed red;
+        background-color: var(--color-secondary);
+        border: 4px double #ffffff;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -276,47 +278,102 @@ background-position: bottom left;
     }
     /* end semesters thumbnail section */
 
+    /* footer */
     #pagefooter {
-    min-height: 200px;
-    background-color: cornflowerblue;
-    padding: 1rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    padding-top: 6rem;
     }
-    
-    /* Media Queries
+
+    #pagefooter .container{
+        background-color: chocolate;
+        border: 4px double #FFDECA;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #pagefooter a{
+        color: #fff;
+    }
+
+    #pagefooter a:hover{
+        color: #b7c1bf;
+    }
+
+    #pagefooter h3{
+        padding-bottom: 3rem;
+    }
+
+    #pagefooter #quote{
+        text-align: left;
+    }
+
+    #pagefooterlinks{
+        display: none;
+    }
+
+    /* Media Queries */
     @media only screen and (min-width: 320px) {
-    body {
-    font-size: 1rem;
+
+    #features{
+        background-color: none;
+        border-radius:2.5rem;
     }
-    #features {
-    background-color: magenta;
-    }
+
     }
     @media only screen and (min-width: 480px) {
-    body {
-    font-size: 1.4rem;
-    }
-    #features {
-    background-color: yellow;
-    }
+        
+        #features{
+            background-color: #ffecca;
+        
+        }
     }
     @media only screen and (min-width: 768px) {
-    body {
-    font-size: 1.6rem;
-    }
-    #features {
-    background-color: lime;
-    }
+
+        #features{
+            background-color: #FED41C;
+        }
+
+        .card{
+            flex-basis: 30%;
+        }
+
+        #features .container{
+            flex-direction: row;
+        }
+
+        h1, h2{
+            text-align: left;
+        }
+
     }
     @media only screen and (min-width: 1024px) {
-    #features {
-    background-color: coral;
-    }
+
+        #features{
+            background-color: #FBC015;
+        }
+
+        #logosbig{
+            display: none;
+            margin: auto;
+        }
+
+        #logossmall{
+            display: none;
+        }
+
     }
     @media only screen and (min-width: 1200px) {
-    body {
-    font-size: 2rem;
+
+        #features{
+            background-color: #F8B00E;
+        }
+
+        #pagefooterlinks{
+            display: block;
+        }
+
     }
-    #features {
-    background-color: steelblue;
-    }
-    } */
