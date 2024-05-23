@@ -1,6 +1,6 @@
 :root {
-    --color-primary: #F99115;
-    --color-secondary: #ffeacb;
+    --color-primary: #341135;
+    --color-secondary: #ED1E31;
     }
     html {
     font-size: 62.5%;
@@ -84,7 +84,7 @@
     }
 
     #pageheader .container{
-        background-color: rgb(255, 179, 85);
+        background-color: #341135;
         border: 4px double #FFDECA;
         display: flex;
         justify-content: space-between;
@@ -136,11 +136,11 @@
     background-color: var(--color-primary);
     padding: 3rem;
 background-image: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
-background-image: url(images/bananas.jpg);
+background-image: url(images/sugarcloud.png);
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
-background-position: bottom left;
+background-position: center bottom;
     }
 
     #showcasetext{
