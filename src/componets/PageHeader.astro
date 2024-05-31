@@ -13,9 +13,9 @@
 
         <nav>
             <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/career">Career</a></li>
+                <li><a href="/markdown/">Markdown</a></li>
                 <li><a href="https://chsserver01.org/2023/hgeary062023/np">CHS Portfolio</a></li>
             </ul>
 
@@ -27,3 +27,59 @@
 </header>
 
 <!-- end page header -->
+
+<style>
+
+#pageheader {
+        background-color: var(--color-primary);
+        height: 7.0rem;
+    }
+
+    #pageheader .container{
+        background-color: #341135;
+        border: 4px double #FFDECA;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding: 0 2rem 0 2rem;
+    }
+
+    .logo img{
+        height: 6rem;
+    }
+
+    .logo:hover{
+        animation-name:swim;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+
+    @keyframes swim{
+        0%{transform:rotate(0deg);}
+        100%{transform: rotate(45deg);}
+    }
+
+    /* header menu */
+
+    #menu{
+        background-color: var(--color-primary);
+        border: 2px double none;
+        display: flex;
+        justify-content: space-between;
+        width: 35rem;
+        list-style-type: none;
+        background-color: none;
+        padding: .3rem;
+    }
+
+    #menu li a{
+        color: #fff;
+    }
+
+    /* end of header section style */
+
+
+</style>

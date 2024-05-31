@@ -78,57 +78,7 @@
 
 
     
-    #pageheader {
-        background-color: var(--color-primary);
-        height: 7.0rem;
-    }
-
-    #pageheader .container{
-        background-color: #341135;
-        border: 4px double #FFDECA;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        padding: 0 2rem 0 2rem;
-    }
-
-    .logo img{
-        height: 6rem;
-    }
-
-    .logo:hover{
-        animation-name:swim;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-timing-function: linear;
-    }
-
-    @keyframes swim{
-        0%{transform:rotate(0deg);}
-        100%{transform: rotate(45deg);}
-    }
-
-    /* header menu */
-
-    #menu{
-        background-color: var(--color-primary);
-        border: 2px double none;
-        display: flex;
-        justify-content: space-between;
-        width: 20rem;
-        list-style-type: none;
-        background-color: none;
-        padding: .3rem;
-    }
-
-    #menu li a{
-        color: #fff;
-    }
-
-    /* end of header section style */
-
+    
 /* showcase */
 
     #showcase {
@@ -145,7 +95,7 @@ background-position: center bottom;
 
     #showcasetext{
         border: 2rem solid none;
-    color: #b36200;
+    color: #fefefe;
     text-align: center;
     margin: 5rem auto;
     max-width: 60rem;
@@ -184,7 +134,7 @@ background-position: center bottom;
     }
 
     #showcaseintro{
-        color: #b36200;
+        color: #ffffff;
         text-align: center;
         font-size: 3rem;
     }
