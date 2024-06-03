@@ -86,7 +86,7 @@
     background-color: var(--color-primary);
     padding: 3rem;
 background-image: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
-background-image: url(images/sugarcloud.png);
+background-image: url(/images/sugarcloud.png);
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
